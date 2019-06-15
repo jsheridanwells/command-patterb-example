@@ -27,23 +27,4 @@ namespace CommandConsole
             }
         }
     }
-
-    public interface IReceiver
-    {
-        void DoSomething(string st);
-        void DoSomethingElse(string st);
-    }
-    
-    public class Receiver : IReceiver
-    {
-        public void DoSomething(string str)
-        {
-            Console.WriteLine($"The receiver is { str } !!");
-        }
-
-        public void DoSomethingElse(string str)
-        {
-            Console.WriteLine($"The receiver is also { str } !");
-        }
-    }
 }
